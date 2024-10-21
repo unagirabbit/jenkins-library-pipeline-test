@@ -8,8 +8,6 @@ import com.lesfurets.jenkins.unit.declarative.DeclarativePipelineTest
 import org.junit.Before
 import org.junit.Test
 
-import static org.junit.Assert.assertTrue
-
 class TestSample extends DeclarativePipelineTest {
 
     @Override

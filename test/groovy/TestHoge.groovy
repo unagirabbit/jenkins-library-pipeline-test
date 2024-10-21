@@ -1,11 +1,9 @@
 package groovy
 
+import static org.junit.Assert.assertEquals
 import com.lesfurets.jenkins.unit.BasePipelineTest
 import org.junit.Before
 import org.junit.Test
-
-import static org.assertj.core.api.Assertions.assertThat
-import static org.junit.Assert.assertEquals
 
 /**
 * slack.groovyのテスト
@@ -45,4 +43,5 @@ class TestSlack extends BasePipelineTest {
         assertEquals('', result)
         printCallStack()
     }
+
 }

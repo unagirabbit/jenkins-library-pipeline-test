@@ -1,6 +1,5 @@
 plugins {
     id 'groovy'
-    id 'jacoco'
 }
 
 repositories {
@@ -9,8 +8,8 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all
-    implementation 'org.codehaus.groovy:groovy-all:3.0.22'
+//    // https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all
+//    implementation 'org.codehaus.groovy:groovy-all:3.0.22'
     // https://mvnrepository.com/artifact/org.jenkins-ci.main/jenkins-core
     implementation 'org.jenkins-ci.main:jenkins-core:2.478'
     // https://mvnrepository.com/artifact/org.jenkins-ci.plugins.workflow/workflow-job
@@ -33,14 +32,6 @@ test {
 
     testLogging {
         events 'PASSED', 'FAILED', 'SKIPPED'
-    }
-    finalizedBy jacocoTestReport
-}
-
-jacocoTestReport {
-    reports {
-        xml.required = true
-        html.required = true
     }
 }
 
